@@ -2,13 +2,14 @@
 @media (min-width: 768px) {
 
   .container {
+    
     max-width: 768px;
     margin: 0 auto;
   }
 
   .bg-img {
     background-image: url("../img/foto.png");
-    height: 700px;
+    min-height: 700px;
     
   }
 
@@ -25,13 +26,17 @@
     display: block;
     width: 75%;
   }
-
+  
+  .row {
+    margin: 0 auto;
+     
+   }
   
 
   .btn-find {
     width: 225px;
     background-color: #ff4e50;
-    font-size: 13.99px;
+    font-size: 13px;
     border-radius: 20px;
     margin-top: 37px;
   }
@@ -55,11 +60,7 @@
 
  @media (min-width: 992px) {
 
-  .container-fluid {
-    padding: 0;
-    margin: 0;
-    
-  }
+  
 
 .container {
    max-width: 992px;
@@ -104,6 +105,7 @@
 
   .headder-title {
     font-size: 39px;
+    
   }
 
   .headder-subtitle {

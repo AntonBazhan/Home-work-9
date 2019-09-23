@@ -3,7 +3,7 @@
 body {
    margin: 0 auto;
    padding: 0;
-  /* margin-left: -29px;*/
+   
 }
 
   html{
@@ -37,6 +37,8 @@ body {
 
 .row {
   justify-content: center;
+  margin: 0 auto;
+   
 }
   
 /* Фон*/
@@ -51,7 +53,7 @@ body {
 
 .bg-img {
 width: 100%;
-height: 541px;
+min-height: 541px;
 background-image: url("../img/mobile.png");
 background-repeat: no-repeat;
 background-size: cover;
