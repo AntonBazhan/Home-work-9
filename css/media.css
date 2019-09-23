@@ -74,9 +74,13 @@
 
   .row {
    margin: 0 auto;
-   /*width: 940px;*/
+   max-width: 940px;
     
   }
+
+.box-partner{
+  justify-content: flex-start;
+}
 
   .ul-list {
     max-width: 100%;
