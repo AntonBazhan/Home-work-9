@@ -3,7 +3,7 @@
 body {
    margin: 0 auto;
    padding: 0;
-   background: black ;      
+       
 }
 
   html{
@@ -14,14 +14,6 @@ body {
   
      /* Обвертка*/
    
-.wrapper {
-  min-width: 0;
-  max-width: 767px;
-  height: auto;
-  margin: 0 auto;
-  background: white ; 
-}
-
   .container-fluid{
   background-color: white;
    }
