@@ -3,11 +3,13 @@
 
   .container {
     max-width: 768px;
+    margin: 0 auto;
   }
 
   .bg-img {
     background-image: url("../img/foto.png");
     height: 700px;
+    
   }
 
   .height {
@@ -24,10 +26,7 @@
     width: 75%;
   }
 
-  .wrapper {
-    min-width: 730px;
-    max-width: 991px;
-  }
+  
 
   .btn-find {
     width: 225px;
@@ -56,26 +55,27 @@
 
  @media (min-width: 992px) {
 
+  .container-fluid {
+    padding: 0;
+    margin: 0;
+    
+  }
+
 .container {
-    max-width: 992px;
+   max-width: 992px;
    
   }
 
   .bg-img {
     background-image: url("../img/foto.png");
     height: 700px;
+    
   }
 
-  
   .row {
    margin: 0 auto;
    width: 940px;
     
-  }
-
-  .wrapper {
-    min-width: 954px;
-    max-width: 1410px;
   }
 
   .ul-list {
@@ -83,10 +83,7 @@
     justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
-   
   }
-
-  
 
   .unvisible {
     display: block;

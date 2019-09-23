@@ -3,7 +3,7 @@
 body {
    margin: 0 auto;
    padding: 0;
-       
+   margin-left: -29px;
 }
 
   html{
@@ -16,15 +16,15 @@ body {
    
   .container-fluid{
   background-color: white;
+  
    }
 
 
 /*Контейнер*/
   .container {
    width: 100%;
-   margin:  auto;
+   margin: auto;
    
- 
   }
 /* Настройки сетки */
 
@@ -58,6 +58,7 @@ background-size: cover;
 background-position: center center;
 display: inline-block;
 background-color: black;
+
 }
 
 .height {
