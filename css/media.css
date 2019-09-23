@@ -1,169 +1,121 @@
- /*Стилизация под расширение 768px */
+ 
+@media (min-width: 768px) {
 
-@media screen and (min-width: 480px) {
-  .container-fluid {
-    background-image: url("../img/foto.png");
-  }
   .container {
-    max-width: 480px;
-    margin: 0 auto;
-    min-height: 542px;
-    
-  }
-
-  .headder-wrapper {
-  position: absolute;
-  
+    max-width: 768px;
   }
 
   .bg-img {
-    width: 100%;
+    background-image: url("../img/foto.png");
     height: 700px;
-  object-fit: cover;
   }
 
-  .nav-wrapper {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 660px;
-    min-width: 480px; 
+  .height {
+    height: 700px;
   }
 
-  .logo-wrapper {
-    width: 490px; 
+  .ul-list {
+    max-width: 100%;
+    justify-content: space-between;
   }
 
-  .img-logo {
-    width: 180px;
-    height: 20px;
-   display:inline-block ;
-    position: relative;
-    top: 3px;
-    
+  .unvisible {
+    display: block;
+    width: 75%;
   }
 
-  .ul-item {
-    justify-content: flex-end;
-  }
-
-  .img-logo-mob {
-    display: none;
-  }
-
-  .logo-center {
-    min-width: 0;
-    max-width: 540px;
-  }
-
-  .aside-wrapper {
-    width: 100%;
-  }
-
-  .title {
-    font-size: 52px;
-    margin-top: 223px;
-  }
-
-  .subtitle {
-    font-size: 24px;
+  .wrapper {
+    min-width: 730px;
+    max-width: 991px;
   }
 
   .btn-find {
     width: 225px;
     background-color: #ff4e50;
-    font-size: 14px;
+    font-size: 13.99px;
     border-radius: 20px;
-    margin-top: 36px;
+    margin-top: 37px;
   }
 
-  .section-wrapper {
-    margin-top: 70px;
-    min-width: 462px; 
-    max-width: 490px;
-    margin-left: auto;
-    margin-right: auto;
+  .headder-title {
+    font-size: 52px;
+  }
+  .headder-subtitle {
+    font-size: 24px;
   }
 
-  .box-partners {
-    min-width: 442px; 
-    max-width: 492px; 
-    margin: 0 auto;
-  }
-
-  .fotter-wrapper {
+  .footer-wrapper {
     padding-top: 38px;
     padding-bottom: 40px;
   }
+
+.btn-other {
+  width: 188px;
+}
 }
 
-/* Стилизация под расширение 1440px */
-@media screen and (min-width: 961px) {
+ @media (min-width: 992px) {
 
-  .container-fluid {
-    min-height: 700px;
+.container {
+    max-width: 992px;
+   
+  }
+
+  .bg-img {
     background-image: url("../img/foto.png");
+    height: 700px;
   }
-  .container {
-    max-width: 940px;
+
+  
+  .row {
+   margin: 0 auto;
+   width: 940px;
+    
   }
+
+  .wrapper {
+    min-width: 954px;
+    max-width: 1410px;
+  }
+
+  .ul-list {
+    max-width: 100%;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+
   
 
-  .nav-wrapper {
-    max-width: 940px;
-    min-width: 840px;
-  }
-  .logo-wrapper {
-    width: 760px;
-  }
-
-  .img-logo-mob {
-    display: none;
-  }
-  .img-logo {
-    width: 180px;
-    height: 20px;
+  .unvisible {
     display: block;
-  }
-  .bg-img {
-    width: 100%;
-    height: 700px;
-    object-fit: cover;
+    width: 82%;
   }
 
-  .title {
-    font-size: 52px;
-    margin-top: 223px;
-  }
-
-  .subtitle {
-    font-size: 24px;
-  }
   .btn-find {
     width: 225px;
     background-color: #ff4e50;
     font-size: 14px;
     border-radius: 20px;
-    margin-top: 36px;
+    margin-top: 37px;
   }
-  .section-wrapper {
-    margin-top: 70px;
-    min-width: 940px;
-    max-width: 940px; 
-    margin-left: auto;
-    margin-right: auto;
+
+  .headder-title {
+    font-size: 40px;
   }
-  .box-partners {
- 
-    min-width: 940px;
-    max-width: 940px; 
-    margin-left: auto;
-    margin-right: auto;
+
+  .headder-subtitle {
+    font-size: 23px;
+    width: 380px;
   }
-  .fotter-wrapper {
+
+  .footer-wrapper {
     padding-top: 38px;
-    padding-bottom: 72px;
+    padding-bottom: 73px;
+  }
+
+  .btn-other {
+    width: 188px;
   }
 }

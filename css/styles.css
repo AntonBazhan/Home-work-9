@@ -3,27 +3,29 @@
 body {
    margin: 0 auto;
    padding: 0;
-  
-       
+   background: black ;      
 }
 
   html{
-    box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 0;
+  font-weight: inherit;
   }
   
-  
-   /* Обвертка*/
+     /* Обвертка*/
+   
+.wrapper {
+  min-width: 0;
+  max-width: 767px;
+  height: auto;
+  margin: 0 auto;
+  background: white ; 
+}
+
   .container-fluid{
-   width: 100%;
-   min-height: 542px;
-  /*height: 700px;*/
-   background-image: url("../img/mobile.png");
-   background-repeat: no-repeat;
-   background-size: cover;
-  display: inline-block;
-  background-color: black;
-  
-  }
+  background-color: white;
+   }
+
 
 /*Контейнер*/
   .container {
@@ -32,276 +34,309 @@ body {
    
  
   }
+/* Настройки сетки */
 
+.size {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  justify-content: center;
+}
   
-/* Задаем цвет фона обертки*/
-.site-wrapper {
+/* Фон*/
+
+.bg {
   background-color: white;
- position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 /* Задаем фоновое изображение */
 
 .bg-img {
-  width: 100%;
-  height: 541px;
-  background-color: black;
-  display: inline-block;
+width: 100%;
+height: 541px;
+background-image: url("../img/mobile.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+display: inline-block;
+background-color: black;
 }
 
-/* Выносим вперед и центрируем блок хэддер */
-.headder-wrapper {
-  width: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  margin-right: auto;
-  margin-left: auto;
+.height {
+  height: 540px;
 }
 
-/* Стилизируем навигацию */
-.ul-item {
-  list-style: none outside;
-  padding: 0;
+/* Навигация */
+
+.ul-list {
   margin: 0;
-  padding-top: 45px;
-  font-size: 14px;
+  padding: 0;
+  list-style: none;
+  padding-top: 20px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-
-.li-nav {
-  min-width: 86px;
-  height: 32px;
-  border: 2px solid transparent;
-  border-radius: 15px;
-}
-
-.li-nav:hover {
-  border: 2px solid white;
+  min-width: 0;
+  max-width: 767px;
+  box-sizing: border-box;
+  line-height: 1px;
 }
 
 .nav-link {
+  display: block;
+  width: 86px;
+  height: 32px;
+  border: 2px solid transparent;
+  border-radius: 17px;
   font-size: 14px;
-  text-decoration: none;
+  line-height: 28px;
   color: white;
-  line-height: 36px;
+  text-decoration: none;
+  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+}
+
+.nav-link::first-letter {
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: white;
+  border: 2px solid white;
+  border-radius: 17px;
 }
 
 .img-logo {
+  margin-top: 172px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 28px;
+}
+
+.unvisible {
   display: none;
-}
-
-.img-logo-mob {
-  margin-top: 100px;
-  width: 180px;
-  height: 20px; 
-}
-
-/* Центрируем контент в хэддере */
-.logo-center {
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  min-width: 0;
-  max-width: 320px;
-  height: auto;
-}
-
-
-/* Центрируем и задаем размер контенту в хэддере */
-.aside-wrapper {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  text-align: center;
-}
-
-.title {
-  width: 100%;
-  font-size: 30px;
-  font-weight: 300;
-  color: white;
-  text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-top: 36px;
+}
+
+.headder-title {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: 0;
+  padding-right: 0;
+  color: white;
+  font-size: 30px;
+  margin-top: 170px;
+  text-align: center;
+  text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
-.subtitle {
-  width: 100%;
-  font-size: 14px;
-  color: white;
+.headder-subtitle {
   margin: 0;
   padding: 0;
-  margin-top: 10px;
+  color: white;
+  font-size: 18px;
+  margin-top: 18px;
+  text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 
 .btn-find {
- /* width: 280px;*/
-  height: 40px;
+  width: 280px;
+  height: 44px;
   background-color: #ff4e50;
   font-size: 14px;
-  line-height: 40px;
+  line-height: 44px;
   color: white;
   border: none;
   border-radius: 20px;
   margin-top: 18px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  position: relative;
+}
+
+.btn-find::first-letter {
+  text-transform: uppercase;
 }
 
 .btn-find:hover {
   background-color: transparent;
   color: #ff4e50;
   border: 2px solid #ff4e50;
-  border-radius: 17px; 
 }
 
-
-/* Основной блок */
-.section-title {
-  font-size: 22px;
-  color: #333333;
- /* margin-top: 74px;*/
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-}
-.section-title::first-letter {
-  text-transform: capitalize;
-}
-
-.section-wrapper {
-  width: 220px;
+/* Основной контент */
+.wrapper-content {
   margin-left: auto;
   margin-right: auto;
+  
 }
 
-.item-wrapper {
-  width: 220px;
-  height: auto;
+.content-title {
+  font-size: 22px;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  margin-top: 71px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   text-align: center;
+}
+
+.content-title::first-letter {
+  text-transform: uppercase;
+}
+
+.box-partner {
+  width: 100%;
+  margin-top: 58px;
+}
+
+.img-partner-1 {
+  background-image: url("../img/partner\ 1.png");
+  background-position: center center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: block;
   margin: 0 auto;
   position: relative;
 }
 
-.box-partners {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.item-box {
-  width: 122px;
-  height: 122px;
-  border-radius: 50%;
-  overflow: hidden;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.item-img {
-  width: 122px;
-  height: 122px;
-}
-
-.item-status-1 {
-  width: 32px;
+.img-status-1 {
   height: 32px;
+  width: 32px;
   background-color: #ff4e50;
   background-image: url("../img/tv.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+  border: 3px solid white;
   border-radius: 50%;
-  border: 4px solid white;
   position: absolute;
-  top: 85px;
-  right: 45px;
+  bottom: 0;
+  right: 0;
 }
 
-.item-status-2 {
-  width: 32px;
+.img-partner-2 {
+  background-image: url("../img/partner2.png");
+  background-position: center center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.img-status-2 {
   height: 32px;
+  width: 32px;
   background-color: #1cd7ad;
   background-image: url("../img/cup.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+  border: 3px solid white;
   border-radius: 50%;
-  border: 4px solid white;
   position: absolute;
-  top: 85px;
-  right: 45px;
+  bottom: 0;
+  right: 0;
 }
 
-.item-status-3 {
-  width: 32px;
+.img-partner-3 {
+  background-image: url("../img/partner\ 3.png");
+  background-position: center center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.img-status-3 {
   height: 32px;
+  width: 32px;
   background-color: #ffa507;
   background-image: url("../img/tube.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+  border: 3px solid white;
   border-radius: 50%;
-  border: 4px solid white;
   position: absolute;
-  top: 85px;
-  right: 45px;
+  bottom: 0;
+  right: 0;
 }
 
-.item-status-4 {
-  width: 32px;
+.img-partner-4 {
+  background-image: url("../img/partner\ 4.png");
+  background-position: center center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.img-status-4 {
   height: 32px;
+  width: 32px;
   background-color: #4e73db;
   background-image: url("../img/plane.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+  border: 3px solid white;
   border-radius: 50%;
-  border: 4px solid white;
   position: absolute;
-  top: 85px;
-  right: 45px;
+  bottom: 0;
+  right: 0;
 }
 
-.item-name {
+.partner-name {
   font-size: 14px;
   color: #333333;
   text-align: center;
   text-transform: capitalize;
+  margin-top: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
-.item-about {
+.partner-description {
   font-size: 14px;
   color: #666666;
   text-align: center;
+  margin-top: 18px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 
-
 /* Футтер */
-.fotter-wrapper {
+.footer-wrapper {
   text-align: center;
-  background-color: white;
   padding-top: 28px;
   padding-bottom: 57px;
+  background-color: white;
 }
 
 .btn-other {
   font-size: 14px;
   color: #ff4e50;
-  width: 188px;
+  width: 280px;
   height: 36px;
   border: none;
   background-color: #ff4e50;
@@ -319,5 +354,6 @@ body {
 .btn-other:hover {
   background-color: transparent;
   color: #ff4e50;
-  border: 2px solid #ff4e50; 
+  border: 2px solid #ff4e50;
 }
+
